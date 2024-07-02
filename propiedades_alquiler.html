@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades en Alquiler</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <span class="logo">Animobilaria</span>
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="propiedades_venta.html"><i class="fas fa-key"></i> Propiedades en Venta</a>
+    </nav>
+    <h2>Propiedades en Alquiler</h2>
+    <div class="contenedor-propiedades" id="propiedades-alquiler"></div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderizarPropiedades(propiedades_alquiler, 'propiedades-alquiler', propiedades_alquiler.length);
+        });
+    </script>
+</body>
+</html>
